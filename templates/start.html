@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Title</h1></header>
+    <article>
+        <h3>Content below</h3>
+        <form action="/" mehod="POST">
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.customerID.label }}<br>
+                {{ form.customerID(size=32) }}
+            </p>
+            <p>{{ form.submit() }}</p>
+        </form>
+    </article>
+    <footer><p>Footer placeholder</p></footer>
+</body>
+</html>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: purple;
+            color: white;
+            margin: 0;
+        }
+        article {
+            padding: 20px;
+            background-color: lightgray;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            text-align: right;
+            padding: 15px 10px;
+        }
+    </style>
